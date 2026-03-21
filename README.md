@@ -16,6 +16,17 @@ Building an AI SaaS product from scratch is slow, complex, and repetitive.
 * Analytics dashboard
 * Modern full-stack setup (FastAPI + Next.js)
 
+* ## 📸 Preview
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Analytics
+![Analytics](./screenshots/analytics.png)
+
+### Data Upload
+![Upload](./screenshots/upload.png)
+
 ---
 
 ## ⚡ Why this is different
@@ -55,6 +66,25 @@ You’re not starting from zero — you’re starting from a **real product base
 
 ---
 
+## 📁 Project Structure
+backend/ # FastAPI backend
+frontend/ # Next.js frontend
+docker/ # Docker configs
+
+## 👤 Who this is for
+
+- Developers building AI SaaS products  
+- Startups validating ideas fast  
+- Freelancers building client dashboards  
+- Indie hackers launching MVPs
+
+## 🎁 What you get
+
+- Production-ready SaaS architecture  
+- AI-powered data processing system  
+- Scalable backend + modern frontend  
+- Time saved (weeks of development)  
+
 ## ⚡ Quick Start
 
 Clone the repository:
@@ -74,3 +104,8 @@ Run the application:
 ```bash
 docker-compose up --build
 ```
+
+## ⭐ Support
+
+If you find this useful, consider giving it a star ⭐  
+It helps others discover the project.
