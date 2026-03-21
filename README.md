@@ -26,13 +26,19 @@ Building an AI SaaS product from scratch is slow, complex, and repetitive.
 * ## 📸 Preview
 
 ### Dashboard
-!Dashboard(/screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ### Analytics
-!Analytics(./screenshots/analytics.png)
+![Analytics](./screenshots/analytics.png)
 
 ### Data Upload
-!Upload(./screenshots/upload.png)
+![Upload](./screenshots/upload.png)
+
+## Integrations
+![integrations](./screenshots/integrations)
+
+## NexusAI
+![nexusai](./screenshots/nexusai)
 
 ---
 
