@@ -3,6 +3,13 @@
 > Turn your data into AI-powered SaaS products with built-in multi-tenant architecture and analytics.
 
 ---
+## 🌐 Live Demo
+
+👉 **[🚀 View Live Demo](https://complete-saa-s-intelligence-platfor.vercel.app)**
+
+> Demo account:
+> Email: gamergeaks5@gmail.com  
+> Password: WAsike54
 
 ## 🚀 What is this?
 
@@ -19,13 +26,13 @@ Building an AI SaaS product from scratch is slow, complex, and repetitive.
 * ## 📸 Preview
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+!Dashboard(/screenshots/dashboard.png)
 
 ### Analytics
-![Analytics](./screenshots/analytics.png)
+!Analytics(./screenshots/analytics.png)
 
 ### Data Upload
-![Upload](./screenshots/upload.png)
+!Upload(./screenshots/upload.png)
 
 ---
 
