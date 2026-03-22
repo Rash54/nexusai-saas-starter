@@ -55,6 +55,55 @@ Most SaaS starters give you:
 You’re not starting from zero — you’re starting from a **real product base**.
 
 ---
+| **🆓 Free (GitHub)**                     | **💎 Pro (Gumroad — Locked)**                                                                    |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| ## 🛠 Backend Included                   | ## 🧠 Backend — Pro Only                                                                         |
+| Auth — register, login, JWT, `/me`       | AI Insights router (benchmarks, anomalies, what-if, segmentation)                                |
+| Users — profile, password update         | Correlations router (ad spend ↔ revenue, Pearson engine)                                         |
+| Dashboard — summary endpoint             | Payments & Billing router (Stripe webhooks, subscriptions)                                       |
+| Metrics — snapshots, trends              | Integrations router (Stripe, HubSpot, GA4, PostHog, Mixpanel, Plaid, Mercury, OpenAI, Anthropic) |
+| Revenue — summary + basic forecast       | Admin router (audit logs, superuser analytics)                                                   |
+| Growth — summary endpoint                | Uploads router (CSV/XLSX ingestion + AI parsing)                                                 |
+| Analytics — create & list reports        | AI Usage router (cost tracking, token logs)                                                      |
+| Notifications — list, mark read          | Recommendations router (AI-generated action items)                                               |
+| Support — ticket creation                | Tasks router (full task management)                                                              |
+| Health check endpoint                    | Team advanced — roles, audit trail, performance metrics                                          |
+| Organizations — basic CRUD               | Celery + Redis task queue (forecast tasks, cleanup, metric tasks)                                |
+| Team — list members, 1 seat invite       |                                                                                                  |
+|                                          |                                                                                                  |
+| ## 🎨 Frontend Pages                     | ## 🎯 Frontend — Pro Only                                                                        |
+| Login / Register / Invite accept         | AI Insights page (benchmarks, anomalies, health score)                                           |
+| Dashboard page (live data)               | Correlations page (ad campaign intelligence)                                                     |
+| Analytics page (basic)                   | Billing page (plans, invoices, usage)                                                            |
+| Revenue page (summary)                   | Upload page (CSV/XLSX drag-drop + AI analysis)                                                   |
+| Growth page                              | Integrations page (9 providers)                                                                  |
+| Metrics page                             | Tasks page (full Kanban/list)                                                                    |
+| Notifications page                       | Team page (invite, roles, audit)                                                                 |
+| Settings page                            | Organizations page                                                                               |
+| Sidebar, Topbar, Mobile nav              | NEXU AI Chat (full, with history)                                                                |
+|                                          | AI Assistant page                                                                                |
+|                                          |                                                                                                  |
+| ## 🤖 AI Capabilities                    | ## 🧠 AI Services — Pro Only                                                                     |
+| Built-in rule engine (no API key needed) | `builtin_engine.py` — full 7-module intelligence engine                                          |
+| 5 quick prompts, no history              | `insight_service.py` — AI insight generation                                                     |
+| Basic revenue + churn answers only       | `web_intelligence.py` — DuckDuckGo / HN / Reddit enrichment                                      |
+|                                          | OpenAI + Anthropic fallback routing                                                              |
+|                                          | `anomaly_service.py` — z-score detection, alert rules                                            |
+|                                          | `whatif_service.py` — 10 scenario types, 12-month projection                                     |
+|                                          | `benchmarks.py` — SaaS percentile database                                                       |
+|                                          | `correlation_service.py` — Pearson + campaign scoring                                            |
+|                                          | `recommendation_service.py`                                                                      |
+|                                          |                                                                                                  |
+| ## ⚙️ Infrastructure                     | ## 📊 Models — Pro Only                                                                          |
+| FastAPI + SQLAlchemy + Alembic           | Payment, Plan, Subscription                                                                      |
+| Next.js 15 App Router + TypeScript       | PaymentMethod, PaymentTransaction                                                                |
+| Docker + Docker Compose                  | AIUsageLog                                                                                       |
+| PostgreSQL (Neon-compatible)             | AdCampaignMetric, UploadedRow, DataUpload                                                        |
+| `.env.example`, `docs/`, screenshots     | Recommendation                                                                                   |
+|                                          | AuditLog, PerformanceMetric                                                                      |
+|                                          | AlertRule, AlertEvent                                                                            |
+
+---
 
 ## 🔥 Features
 
