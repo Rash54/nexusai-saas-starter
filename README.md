@@ -104,6 +104,20 @@ You’re not starting from zero — you’re starting from a **real product base
 |                                          | AlertRule, AlertEvent                                                                            |
 
 ---
+
+## 💎 Unlock Pro
+
+Get the full NEXU AI platform with:
+
+- Advanced AI insights & forecasting  
+- Real integrations (Stripe, GA4, etc.)  
+- Full billing & subscription system  
+- Production-grade AI engine
+  
+> 💎 Want the full version?  
+👉 **[🚀 Get NEXU AI Pro](https://yusuf545.gumroad.com/l/ttazrg)**
+
+---
 🧩 Summary
  Free Version (GitHub):
  Fully functional SaaS starter kit with core analytics, auth, dashboards, and a lightweight AI engine.
@@ -113,7 +127,7 @@ You’re not starting from zero — you’re starting from a **real product base
 
 ## 🔥 Features
 
-* 🧠 AI-powered data insights
+* * 🧠 Built-in AI rule engine (Pro unlocks advanced AI)
 * 📊 Built-in analytics dashboard
 * 🏢 Multi-tenant SaaS architecture
 * 📁 CSV & XLSX data uploads
