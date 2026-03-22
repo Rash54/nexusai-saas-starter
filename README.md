@@ -7,6 +7,9 @@
 
 👉 **[🚀 View Live Demo](https://complete-saa-s-intelligence-platfor.vercel.app)**
 
+> ⚠️ Note: This demo runs on the **Free version**.  
+> Pro features (AI insights, integrations, billing) are not included.
+
 > Demo account:
 > Email: gamergeaks5@gmail.com  
 > Password: WAsike54
@@ -105,18 +108,16 @@ You’re not starting from zero — you’re starting from a **real product base
 
 ---
 
-## 💎 Unlock Pro
+## 💰 Go Pro
 
-Get the full NEXU AI platform with:
+Unlock the **full NEXU AI platform**:
 
-- Advanced AI insights & forecasting  
-- Real integrations (Stripe, GA4, etc.)  
-- Full billing & subscription system  
-- Production-grade AI engine
-  
-> 💎 Want the full version?  
-👉 **[🚀 Get NEXU AI Pro](https://yusuf545.gumroad.com/l/ttazrg)**
+- 🧠 Advanced AI insights & forecasting  
+- 🔗 Real integrations (Stripe, GA4, etc.)  
+- 💳 Built-in billing & subscriptions  
+- ⚡ Production-ready intelligence engine  
 
+👉 **[🚀 Upgrade to Pro](https://yusuf545.gumroad.com/l/ttazrg)**
 ---
 🧩 Summary
  Free Version (GitHub):
@@ -191,3 +192,17 @@ docker-compose up --build
 
 If you find this useful, consider giving it a star ⭐  
 It helps others discover the project.
+
+---
+
+## 💰 Go Pro
+
+Unlock the **full NEXU AI platform**:
+
+- 🧠 Advanced AI insights & forecasting  
+- 🔗 Real integrations (Stripe, GA4, etc.)  
+- 💳 Built-in billing & subscriptions  
+- ⚡ Production-ready intelligence engine  
+
+👉 **[🚀 Upgrade to Pro](https://yusuf545.gumroad.com/l/ttazrg)**
+
