@@ -104,6 +104,12 @@ You’re not starting from zero — you’re starting from a **real product base
 |                                          | AlertRule, AlertEvent                                                                            |
 
 ---
+🧩 Summary
+ Free Version (GitHub):
+ Fully functional SaaS starter kit with core analytics, auth, dashboards, and a lightweight AI engine.
+ Pro Version (Gumroad):
+ Complete production-grade AI analytics platform with advanced intelligence, integrations, billing, and automation.
+---
 
 ## 🔥 Features
 
@@ -129,9 +135,9 @@ You’re not starting from zero — you’re starting from a **real product base
 ---
 
 ## 📁 Project Structure
-backend/ # FastAPI backend
-frontend/ # Next.js frontend
-docker/ # Docker configs
+ backend/ # FastAPI backend
+ frontend/ # Next.js frontend
+ docker/ # Docker configs
 
 ## 👤 Who this is for
 
