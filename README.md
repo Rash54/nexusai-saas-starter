@@ -23,22 +23,22 @@ Building an AI SaaS product from scratch is slow, complex, and repetitive.
 * Analytics dashboard
 * Modern full-stack setup (FastAPI + Next.js)
 
-* ## 📸 Preview
+## 📸 Preview
 
 ### Dashboard
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](docs/screenshots/dashboard.png)
 
 ### Analytics
-![Analytics](./screenshots/analytics.png)
+![Analytics](docs/screenshots/analytics.png)
 
 ### Data Upload
-![Upload](./screenshots/upload.png)
+![Upload](docs/screenshots/upload.png)
 
-## Integrations
-![integrations](./screenshots/integrations)
+### Integrations
+![Integrations](docs/screenshots/integrations.png)
 
-## NexusAI
-![nexusai](./screenshots/nexusai)
+### NexusAI
+![NexusAI](docs/screenshots/nexusai.png)
 
 ---
 
