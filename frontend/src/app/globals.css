@@ -1,0 +1,357 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ================================ */
+@layer base {
+  :root {
+    --font-sans:    "DM Sans", sans-serif;
+    --font-display: "Syne", sans-serif;
+    --font-mono:    "JetBrains Mono", monospace;
+
+    /* ── NEXU Light Theme ── */
+    --background:          220 25% 97%;
+    --foreground:          222 47% 8%;
+
+    --card:                0 0% 100%;
+    --card-foreground:     222 47% 8%;
+
+    --popover:             0 0% 100%;
+    --popover-foreground:  222 47% 8%;
+
+    /* Vibrant indigo-blue primary */
+    --primary:             234 89% 62%;
+    --primary-foreground:  0 0% 100%;
+
+    --secondary:           220 16% 93%;
+    --secondary-foreground: 222 47% 8%;
+
+    --muted:               220 16% 93%;
+    --muted-foreground:    220 10% 48%;
+
+    --accent:              220 16% 90%;
+    --accent-foreground:   222 47% 8%;
+
+    --destructive:         0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border:              220 14% 86%;
+    --input:               220 14% 86%;
+    --ring:                234 89% 62%;
+
+    --radius:              0.75rem;
+
+    /* Sidebar — deep navy in both themes */
+    --sidebar:             228 45% 10%;
+    --sidebar-foreground:  220 20% 88%;
+    --sidebar-border:      228 30% 16%;
+    --sidebar-accent:      234 89% 62%;
+    --sidebar-primary:             234 89% 62%;
+    --sidebar-primary-foreground:  0 0% 100%;
+    --sidebar-accent-foreground:   210 40% 96%;
+    --sidebar-ring:                234 89% 62%;
+
+    /* Status */
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --info:    199 89% 48%;
+
+    /* Charts — rich vibrant palette */
+    --chart-1: 234 89% 62%;   /* indigo blue */
+    --chart-2: 162 73% 46%;   /* emerald */
+    --chart-3: 38 92% 50%;    /* amber */
+    --chart-4: 280 68% 62%;   /* purple */
+    --chart-5: 199 89% 50%;   /* cyan */
+    --chart-6: 349 89% 62%;   /* rose */
+  }
+
+  /* ── NEXU Dark Theme ── */
+  .dark {
+    --background:          228 45% 6%;
+    --foreground:          210 40% 95%;
+
+    --card:                228 40% 9%;
+    --card-foreground:     210 40% 95%;
+
+    --popover:             228 40% 9%;
+    --popover-foreground:  210 40% 95%;
+
+    --primary:             234 89% 65%;
+    --primary-foreground:  0 0% 100%;
+
+    --secondary:           228 35% 14%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted:               228 35% 14%;
+    --muted-foreground:    215 20% 52%;
+
+    --accent:              228 35% 17%;
+    --accent-foreground:   210 40% 95%;
+
+    --destructive:         0 62% 52%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border:              228 35% 17%;
+    --input:               228 35% 17%;
+    --ring:                234 89% 65%;
+
+    /* Sidebar — even deeper navy */
+    --sidebar:             228 50% 5%;
+    --sidebar-foreground:  215 20% 72%;
+    --sidebar-border:      228 35% 13%;
+    --sidebar-accent:      234 89% 65%;
+    --sidebar-primary:             234 89% 65%;
+    --sidebar-primary-foreground:  0 0% 100%;
+    --sidebar-accent-foreground:   210 40% 96%;
+    --sidebar-ring:                234 89% 65%;
+
+    /* Status */
+    --success: 142 71% 45%;
+    --warning: 38 92% 50%;
+    --info:    199 89% 48%;
+
+    /* Charts — vibrant on dark */
+    --chart-1: 234 89% 65%;
+    --chart-2: 162 73% 46%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 280 68% 62%;
+    --chart-5: 199 89% 50%;
+    --chart-6: 349 89% 62%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-semibold tracking-tight;
+  }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-muted-foreground/30; }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+
+  ::selection { @apply bg-primary/20 text-foreground; }
+}
+
+/* ================================ */
+@layer utilities {
+  .glass { @apply backdrop-blur-md bg-card/80 border border-border/50; }
+
+  .glass-dark {
+    backdrop-filter: blur(16px);
+    background: hsl(var(--card) / 0.6);
+    border: 1px solid hsl(var(--border) / 0.4);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(280 68% 62%));
+  }
+
+  /* Rich gradient backgrounds for stat cards */
+  .stat-card-blue {
+    background: linear-gradient(135deg, hsl(234 89% 62% / 0.12), hsl(234 89% 62% / 0.04));
+    border-color: hsl(234 89% 62% / 0.2);
+  }
+  .stat-card-green {
+    background: linear-gradient(135deg, hsl(162 73% 46% / 0.12), hsl(162 73% 46% / 0.04));
+    border-color: hsl(162 73% 46% / 0.2);
+  }
+  .stat-card-purple {
+    background: linear-gradient(135deg, hsl(280 68% 62% / 0.12), hsl(280 68% 62% / 0.04));
+    border-color: hsl(280 68% 62% / 0.2);
+  }
+  .stat-card-amber {
+    background: linear-gradient(135deg, hsl(38 92% 50% / 0.12), hsl(38 92% 50% / 0.04));
+    border-color: hsl(38 92% 50% / 0.2);
+  }
+  .stat-card-cyan {
+    background: linear-gradient(135deg, hsl(199 89% 50% / 0.12), hsl(199 89% 50% / 0.04));
+    border-color: hsl(199 89% 50% / 0.2);
+  }
+  .stat-card-rose {
+    background: linear-gradient(135deg, hsl(349 89% 62% / 0.12), hsl(349 89% 62% / 0.04));
+    border-color: hsl(349 89% 62% / 0.2);
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 25%,
+      hsl(var(--accent)) 50%,
+      hsl(var(--muted)) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  .card-hover { @apply transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5; }
+
+  .status-dot { @apply w-2 h-2 rounded-full inline-block; }
+  .status-dot-success { background-color: hsl(var(--success)); }
+  .status-dot-warning { background-color: hsl(var(--warning)); }
+  .status-dot-danger  { background-color: hsl(var(--destructive)); }
+  .status-dot-info    { background-color: hsl(var(--info)); }
+
+  .nav-active {
+    @apply bg-primary/10 text-primary font-medium;
+    box-shadow: inset 3px 0 0 hsl(var(--primary));
+  }
+
+  .touch-target { @apply min-w-[44px] min-h-[44px] flex items-center justify-center; }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  .chart-container { @apply w-full overflow-x-auto; }
+
+  /* Glow effects matching mockup */
+  .nexu-glow {
+    box-shadow: 0 0 24px hsl(var(--primary) / 0.35),
+                0 0 48px hsl(var(--primary) / 0.12);
+  }
+  .nexu-glow-green {
+    box-shadow: 0 0 24px hsl(162 73% 46% / 0.35),
+                0 0 48px hsl(162 73% 46% / 0.12);
+  }
+  .nexu-glow-purple {
+    box-shadow: 0 0 24px hsl(280 68% 62% / 0.35),
+                0 0 48px hsl(280 68% 62% / 0.12);
+  }
+
+  .metric-up   { @apply text-emerald-500; }
+  .metric-down { @apply text-red-500; }
+
+  .page-enter { animation: fade-in 0.3s ease-out forwards; }
+
+  /* Chart gradient fills */
+  .chart-fill-blue   { fill: url(#gradient-blue); }
+  .chart-fill-green  { fill: url(#gradient-green); }
+  .chart-fill-purple { fill: url(#gradient-purple); }
+}
+
+/* ================================ */
+@layer components {
+  .dash-card {
+    @apply rounded-xl border border-border bg-card p-4 md:p-5;
+    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.06),
+                0 1px 2px hsl(var(--foreground) / 0.04);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .dash-card:hover {
+    box-shadow: 0 4px 12px hsl(var(--foreground) / 0.08),
+                0 2px 4px hsl(var(--foreground) / 0.05);
+  }
+
+  /* Dark mode card glow */
+  .dark .dash-card {
+    box-shadow: 0 1px 3px hsl(0 0% 0% / 0.3),
+                0 0 0 1px hsl(var(--border));
+  }
+
+  .dark .dash-card:hover {
+    box-shadow: 0 4px 16px hsl(0 0% 0% / 0.4),
+                0 0 0 1px hsl(var(--primary) / 0.2);
+  }
+
+  .stat-value {
+    font-family: var(--font-display);
+    @apply text-2xl md:text-3xl font-bold tabular-nums;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium
+           text-sidebar-foreground/70 hover:text-sidebar-foreground
+           hover:bg-white/5 transition-all duration-150 cursor-pointer w-full;
+  }
+
+  .nav-item.active {
+    @apply text-white bg-primary/20;
+    box-shadow: inset 3px 0 0 hsl(var(--primary));
+  }
+
+  .mobile-nav-item {
+    @apply flex flex-col items-center gap-1 px-3 py-2 text-xs font-medium
+           text-muted-foreground hover:text-foreground transition-colors;
+  }
+
+  .mobile-nav-item.active { @apply text-primary; }
+
+  .badge-success {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+           bg-emerald-500/10 text-emerald-600 dark:text-emerald-400;
+  }
+  .badge-warning {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+           bg-amber-500/10 text-amber-600 dark:text-amber-400;
+  }
+  .badge-danger {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+           bg-red-500/10 text-red-600 dark:text-red-400;
+  }
+  .badge-info {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium
+           bg-blue-500/10 text-blue-600 dark:text-blue-400;
+  }
+
+  .input-base {
+    @apply w-full rounded-lg border border-input bg-background px-3 py-2 text-sm
+           placeholder:text-muted-foreground focus:outline-none focus:ring-2
+           focus:ring-ring focus:border-transparent transition-all;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-primary
+           px-4 py-2 text-sm font-medium text-primary-foreground
+           hover:bg-primary/90 active:scale-[0.98] transition-all
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    box-shadow: 0 2px 8px hsl(var(--primary) / 0.4);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 4px 16px hsl(var(--primary) / 0.5);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-secondary
+           px-4 py-2 text-sm font-medium text-secondary-foreground
+           hover:bg-secondary/80 active:scale-[0.98] transition-all
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  /* AI Insights panel — dark gradient like mockup */
+  .ai-insights-panel {
+    background: linear-gradient(135deg, hsl(228 50% 10%), hsl(234 60% 14%));
+    border: 1px solid hsl(234 89% 62% / 0.2);
+  }
+
+  .dark .ai-insights-panel {
+    background: linear-gradient(135deg, hsl(228 50% 8%), hsl(234 60% 12%));
+    border: 1px solid hsl(234 89% 62% / 0.25);
+    box-shadow: 0 0 32px hsl(234 89% 62% / 0.08);
+  }
+}
