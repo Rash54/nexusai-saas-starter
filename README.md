@@ -5,7 +5,7 @@
 ---
 ## 🌐 Live Demo
 
-👉 **[🚀 View Live Demo](https://ai-saa-s-platform-that-never-breaks.vercel.app/login)**
+👉 **[🚀 View Live Demo](https://complete-saa-s-intelligence-platfor.vercel.app/login?redirect=%2Fdashboard)**
 
 > ⚠️ Note: This demo runs on the **Free version**.  
 > Pro features (AI insights, integrations, billing) are not included.
